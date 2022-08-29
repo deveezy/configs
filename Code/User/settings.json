@@ -1,0 +1,511 @@
+{
+	"vim.replaceWithRegister": true,
+	"vim.incsearch": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.leader": ",",
+	"vim.statusBarColorControl": false,
+	// For visual mode
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [
+				"<C-c>"
+			],
+			"after": [
+				"\"",
+				"+",
+				"y"
+			]
+		},
+		{
+			"before": [
+				"<C-v>"
+			],
+			"after": [
+				"\"",
+				"+",
+				"p"
+			]
+		}
+	],
+	// For normal mode
+	"vim.normalModeKeyBindings": [
+		{
+			"before": [
+				"<C-c>"
+			],
+			"after": [
+				"\"",
+				"+",
+				"y"
+			]
+		},
+		{
+			"before": [
+				"<C-v>"
+			],
+			"after": [
+				"\"",
+				"+",
+				"p"
+			]
+		},
+		{
+			"before": [
+				"<C-t>"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "workbench.action.navigateBack"
+				}
+			]
+		},
+		{
+			"before": [
+				"u"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "undo"
+				}
+			]
+		},
+		{
+			"before": [
+				"<C-r>"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "redo"
+				}
+			]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"space"
+			],
+			"commands": [
+				":nohl"
+			]
+		}
+	],
+	"vim.handleKeys": {
+		"<C-h>": false,
+		"<C-j>": false,
+		"<C-k>": false,
+		"<C-l>": false,
+		"<C-w>": false
+	},
+	"cmake.buildDirectory": "${workspaceRoot}/build",
+	"editor.mouseWheelZoom": true,
+	"editor.suggest.showStatusBar": true,
+	"files.autoSave": "onFocusChange",
+	"workbench.startupEditor": "newUntitledFile",
+	"cmake.configureOnEdit": false,
+	"cmake.configureOnOpen": false,
+	"editor.tokenColorCustomizations": {
+		"[Default Dark+]": {
+			"textMateRules": [
+				{
+					"scope": "variable.other.enummember",
+					"settings": {
+						"foreground": "#adde9c"
+					}
+				},
+				{
+					"scope": "entity.name.function.preprocessor",
+					"settings": {
+						"foreground": "#c586c0"
+					},
+				},
+				{
+					"scope": "entity.name.define.preprocessor",
+					"settings": {
+						"foreground": "#b8d7a3"
+					},
+				},
+				{
+					"scope": "keyword.control.directive",
+					"settings": {
+						"foreground": "#969798"
+					},
+				},
+				{
+					"scope": "meta.preprocessor.macro",
+					"settings": {
+						"foreground": "#FFFFFF"
+					},
+				},
+				{
+					"scope": "variable.parameter.preprocessor",
+					"settings": {
+						"foreground": "#969798"
+					},
+				},
+				{
+					"scope": "variable.parameter",
+					"settings": {
+						"foreground": "#969798"
+					},
+				},
+				{
+					"scope": "keyword.control",
+					"settings": {
+						"foreground": "#d0bfe3"
+					},
+				},
+				{
+					"scope": "keyword.operator.delete",
+					"settings": {
+						"foreground": "#569cd6"
+					},
+				},
+				{
+					"scope": "variable.other.property",
+					"settings": {
+						"foreground": "#FFFFFF"
+					},
+				},
+				{
+					"scope": "keyword.other.using.directive",
+					"settings": {
+						"foreground": "#569cd6"
+					},
+				},
+				{
+					"scope": "variable.other.global",
+					"settings": {
+						"foreground": "#b4d422"
+					},
+				},
+				{
+					"scope": "entity.name.namespace",
+					"settings": {
+						"foreground": "#d7d7d7"
+					},
+				},
+				{
+					"scope": "storage.type.primitive",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "entity.name.function.operator.member",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "keyword.other.operator.overload",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "entity.name.operator.type",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "keyword.operator.new.cpp",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "keyword.operator.delete.cpp",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "keyword.operator.delete.array.cpp",
+					"settings": {
+						"foreground": "#569CD6"
+					},
+				},
+				{
+					"scope": "entity.name.function",
+					"settings": {
+						"foreground": "#e6810e"
+					},
+				}
+			]
+		},
+		"comments": "#6e6e6e",
+	},
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#1A1A1A",
+		"statusBar.noFolderBackground": "#212121",
+		"statusBar.debuggingBackground": "#263238",
+		"tree.indentGuidesStroke": "#FFFFFF"	
+	},
+	"editor.mouseWheelZoom": true,
+	"debug.inlineValues": true,
+	"editor.renderWhitespace": "all",
+	"editor.minimap.enabled": false,
+	"editor.largeFileOptimizations": false,
+	"editor.tabSize": 2,
+	"C_Cpp.loggingLevel": "Warning",
+	"terminal.integrated.fontSize": 17,
+	"debug.console.fontSize": 20,
+	"terminal.external.linuxExec": "alacritty",
+	"terminal.integrated.enableBell": true,
+	"terminal.integrated.allowMnemonics": true,
+	"vim.textwidth": 100,
+	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
+	"markdown.extension.print.theme": "dark",
+	"workbench.editor.untitled.hint": "hidden",
+	"editor.fontSize": 20,
+	"C_Cpp.clang_format_fallbackStyle": "LLVM",
+	"terminal.integrated.automationShell.linux": "fish",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+	"terminal.integrated.copyOnSelection": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
+	"C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+	"C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+	"C_Cpp.vcFormat.space.pointerReferenceAlignment": "ignore",
+	"C_Cpp.vcFormat.space.withinCastParentheses": true,
+	"C_Cpp.vcFormat.indent.caseLabels": true,
+	"editor.formatOnPaste": true,
+	"C_Cpp.vcFormat.space.beforeInitializerListOpenBrace": true,
+	"C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
+	"C_Cpp.default.intelliSenseMode": "linux-clang-x64",
+	"workbench.iconTheme": "vscode-great-icons",
+	"clangd.path": "/home/deveezy/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd",
+	"editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"editor.codeLensFontFamily": "Ber",
+	"clang-format.executable": "",
+	"todohighlight.isEnable": false,
+	"editor.bracketPairColorization.enabled": true,
+	"clang-tidy.checks": [
+		"-*",
+		"google-*",
+		"cppcoreguidelines-*",
+		"clang-*",
+		"readability-*",
+		"modernize-*",
+		"misc-*",
+		"bugpronoe-*",
+		"fuchsia-*",
+		"zircon-*",
+		"llvm-*",
+		"-cppcoreguidelines-pro-bounds-constant-array-index",
+		"-cppcoreguidelines-pro-bounds-pointer-arithmetic",
+		"-cppcoreguidelines-avoid-magic-numbers",
+		"-misc-no-recursion",
+		"-google-readability-braces-around-statements",
+		"-readability-braces-around-statements",
+		"-readability-magic-numbers",
+		"-modernize-use-trailing-return-type",
+		"-cppcoreguidelines-avoid-c-arrays",
+		"-modernize-avoid-c-arrays",
+		"-llvm-header-guard",
+		"-llvm-include-order",
+		"-fuchsia-default-arguments-calls",
+		"-google-readability-todo",
+		"-cppcoreguidelines-pro-bounds-array-to-pointer-decay",
+		"-cppcoreguidelines-macro-usage",
+		"-modernize-loop-convert"
+	],
+	"C_Cpp.autocomplete": "Disabled",
+	"C_Cpp.formatting": "Disabled",
+	"C_Cpp.errorSquiggles": "Enabled",
+	"C_mantic.caseStyle": "PascalCase",
+	"C_mantic.cpp.accessor.setterDefinitionLocation": "Generate definition in matching source file",
+	"C_mantic.cpp.accessor.getterDefinitionLocation": "Generate definition in matching source file",
+	"C_mantic.cpp.bracedInitialization": true,
+	"C_mantic.headerGuard.style": "Add #pragma once",
+	"cpp-check-lint.cppcheck.--std_c++=": "c++17",
+	"cpp-check-lint.cppcheck.--std_c=": "c11",
+	"cpp-check-lint.cppcheck.--inconclusive": true,
+	"cpp-check-lint.cppcheck.--suppress=": [
+		"missingIncludeSystem"
+	],
+	"cpp-check-lint.cpplint.--filter=": "-whitespace, -legal/copyright",
+	"cpp-check-lint.cppcheck.--enable=": "all",
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"clangd.arguments": [],
+	"clangd.checkUpdates": true,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"extensions.ignoreRecommendations": true,
+	"todo-tree.general.tags": [
+		"BUG:",
+		"HACK:",
+		"FIXME:",
+		"TODO:",
+		"XXX:",
+		"NOTE:",
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"NOTE"
+	],
+	"todo-tree.highlights.customHighlight": {
+		"FIXME:": {
+			"icon": "tools",
+			"type": "text",
+			"background": "rgba(0,0,0,0)",
+			"foreground": "#BF37B2",
+			"opacity": 0
+		},
+		"FIXME": {
+			"icon": "tools",
+			"type": "text",
+			"background": "rgba(0,0,0,0)",
+			"foreground": "#BF37B2",
+			"opacity": 0
+		},
+		"TODO:": {
+			"icon": "alert",
+			"type": "text",
+			"foreground": "#ff6600",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"TODO": {
+			"icon": "alert",
+			"type": "text",
+			"foreground": "#ff6600",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"NOTE:": {
+			"icon": "note",
+			"type": "text",
+			"foreground": "green",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"NOTE": {
+			"icon": "note",
+			"type": "text",
+			"foreground": "green",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"HACK:": {
+			"icon": "rocket",
+			"type": "text",
+			"foreground": "#e6ff01",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"HACK": {
+			"icon": "rocket",
+			"type": "text",
+			"foreground": "#e6ff01",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"BUG:": {
+			"icon": "bug",
+			"type": "text",
+			"foreground": "red",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"BUG": {
+			"icon": "bug",
+			"type": "text",
+			"foreground": "red",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"XXX:": {
+			"icon": "key",
+			"type": "text",
+			"foreground": "#1613f1",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		},
+		"XXX": {
+			"icon": "key",
+			"type": "text",
+			"foreground": "#1613f1",
+			"background": "rgba(0,0,0,0)",
+			"opacity": 0
+		}
+	},
+	"problems.showCurrentInStatus": true,
+	"cmake.enabledOutputParsers": [
+		"cmake"
+	],
+	"security.workspace.trust.banner": "never",
+	"security.workspace.trust.startupPrompt": "never",
+	"explorer.confirmDelete": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"[cmake]": {
+		"editor.defaultFormatter": "josetr.cmake-language-support-vscode"
+	},
+	"gitTreeCompare.diffMode": "merge",
+	"codestream.email": "persontvone@gmail.com",
+	"editor.defaultFormatter": "xaver.clang-format",
+	"git.confirmSync": false,
+	"window.menuBarVisibility": "toggle",
+	"window.titleBarStyle": "custom",
+	"git-graph.graph.style": "angular",
+  "editor.multiCursorModifier": "ctrlCmd",
+	"C_Cpp.intelliSenseEngineFallback": "Disabled",
+	// The number of spaces a tab is equal to. This setting is overridden
+	"editor.tabSize": 2,
+
+	// Insert spaces when pressing Tab. This setting is overriden
+	// based on the file contents when `editor.detectIndentation` is true.
+	"editor.insertSpaces": true,
+
+	// When opening a file, `editor.tabSize` and `editor.insertSpaces`
+	// will be detected based on the file contents. Set to false to keep
+	// the values you've explicitly set, above.
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "cquery.launch.command": "/home/deveezy/dev/projects/cquery/build/cquery",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "gitlens.mode.active": "zen",
+  "sshfs.configs": [
+    {
+      "name": "camera"
+    }
+  ],
+  "remote.SSH.configFile": "/home/deveezy/.ssh/config",
+  "terminal.integrated.inheritEnv": false,
+  "remote.SSH.useLocalServer": false,
+  "editor.inlayHints.enabled": "off",
+  "window.zoomLevel": -2,
+  "explorer.confirmDragAndDrop": false,
+  "editor.lineNumbers": "relative",
+
+}
